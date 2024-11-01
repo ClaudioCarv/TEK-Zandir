@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as pt
 import numpy as np
 import colorama as color
 
@@ -27,16 +28,39 @@ def motivo_comum():
 def linha():
     print('---------' * 8)
 
+def graf_atendimentos():
+    pt.figure(1)
+    atendimentos_motivo = atendimento['motivo'].value_counts()
+    pt.bar(atendimentos_motivo.index, atendimentos_motivo.values, color='red')
+    pt.title("Atendimentos por motivo")
+    pt.xlabel("Motivos")
+    pt.ylabel("atendimentos")
+
+
+def graf_tendencia():
+    pt.figure(2)
+    pt.plot(vendas['data_venda'], vendas['valor_venda'], marker="o", color="blue", label="Vendas Mensais")
+    pt.plot(vendas['data_venda'], vendas['valor_venda'], linestyle='--', color='red', linewidth=2, label='Tendência')
+    pt.title('Tendência de vendas durante os ultimos seis meses')
+    pt.ylabel('Vendas')
+    pt.xlabel('Meses')
+    pt.grid(True)
+    pt.legend()
+    pt.show()
+
+#print da tabela de vendas
 print(f'{color.Fore.LIGHTGREEN_EX}Vendas'.center(55))
 print(f'{vendas}{color.Fore.RESET}')
 linha()
 
 #valor total de vendas realizadas
 valor_total()
+
 #cliente com o maior numero de compras
 maior_compras()
 linha()
 
+#print da tabela de atendimentos
 print(f'{color.Fore.LIGHTCYAN_EX}Atendimentos'.center(55))
 print(f'{atendimento}{color.Fore.RESET}')
 linha()
@@ -47,4 +71,8 @@ atendimentos_realizados()
 #Qual é o motivo mais comum nos atendimentos?
 motivo_comum()
 
+# Gráfico de barras mostrando o número de atendimentos por motivo.
+graf_atendimentos()
 
+#Gráfico de linha para demonstrar a tendência de vendas nos últimos seis meses.
+graf_tendencia()
