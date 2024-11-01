@@ -26,6 +26,6 @@
 
 ###
 
-<h3 align="center">com o Data Lake os dados são rapidamente carregados e armazenados, sem precisar de uma preparação inicial. É ideal para grandes quantidades de dados que chegam em alta velocidade, como em redes sociais.</h3>
+<h3 align="center">Com o Data Lake os dados são rapidamente carregados e armazenados, sem precisar de uma preparação inicial. É ideal para grandes quantidades de dados que chegam em alta velocidade, como em redes sociais.</h3>
 
 ###
