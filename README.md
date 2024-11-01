@@ -2,7 +2,7 @@
 
 ###
 
-<h2 align="left">Manipulação de Dados (Python)</h2>
+<h2 align="center">Manipulação de Dados (Python)</h2>
 
 ###
 
@@ -18,7 +18,7 @@
 
 ###
 
-<h2 align="left">Data Lake (Teórico)</h2>
+<h2 align="center">Data Lake (Teórico)</h2>
 
 ###
 
@@ -26,7 +26,7 @@
 
 ###
 
-<h2 align="left">Consultas SQL</h2>
+<h2 align="center">Consultas SQL</h2>
 
 ###
 
