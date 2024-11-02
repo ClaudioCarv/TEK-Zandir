@@ -1,4 +1,4 @@
-<h1 align="center">Teste de Estágio em Ciência de Dados (BIZ)</h1>
+<h1 align="center">Teste de Estágio em Ciência de Dados (TEK)</h1>
 
 ###
 
